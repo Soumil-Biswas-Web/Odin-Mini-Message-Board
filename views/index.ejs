@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <h1><%= title %></h1>
+    <a href="/new">
+      <button>New Message</button>
+    </a>
+    <% messages.map((message) => { %>
+      <div class="pages" style="margin-bottom: 20px;">
+        <li><%= message.text %></li>
+        <li><%= message.user %></li>
+        <li><%= message.added %></li>
+        <!-- <button>Open</button> -->
+      </div>      
+    <% }) %>
+  </body>
+</html>
